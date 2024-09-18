@@ -17,6 +17,7 @@ async def cmd_start(message: types.Message):
 
 @dp.message()
 async def cmd1_start(message):
+    #111
     if message.document:
         print(message.document.file_id)
         file_info = await bot.get_file(message.document.file_id)
